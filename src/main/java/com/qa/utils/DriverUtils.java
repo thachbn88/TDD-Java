@@ -11,12 +11,12 @@ import java.time.Duration;
 
 public class DriverUtils {
 
-    WebDriver driver;
-
-    public DriverUtils(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+//    WebDriver driver;
+//
+//    public DriverUtils(WebDriver driver) {
+//        this.driver = driver;
+//        PageFactory.initElements(driver, this);
+//    }
 
     public static WebElement waitForVisibility(WebDriver driver, By by) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -31,6 +31,10 @@ public class DriverUtils {
     public static void click(WebDriver driver, By by) {
         WebElement elm = waitForVisibility(driver, by);
         elm.click();
+    }
+
+    public static void GoToUrl(WebDriver driver, String url) {
+        driver.get(url);
     }
 
 
