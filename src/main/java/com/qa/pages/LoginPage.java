@@ -13,9 +13,9 @@ public class LoginPage {
        this.driver = driver;
     }
 
-    public void SignIn() {
-        DriverUtils.enterText(driver, loginObjects.userEmail(), "anshika@gmail.com");
-        DriverUtils.enterText(driver, loginObjects.userPassword(), "Iamking@000");
+    public void SignIn(String username, String password) {
+        DriverUtils.enterText(driver, loginObjects.userEmail(), username);
+        DriverUtils.enterText(driver, loginObjects.userPassword(), password);
         DriverUtils.click(driver, loginObjects.submit());
     }
 
