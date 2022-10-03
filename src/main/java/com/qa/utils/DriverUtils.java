@@ -26,9 +26,9 @@ public class DriverUtils {
         elm.click();
     }
 
-    public static void GoToUrl(WebDriver driver, String url) {
-        driver.get(url);
-    }
+//    public static void GoToUrl(WebDriver driver) {
+//        driver.get(driver, );
+//    }
 
 
 }
